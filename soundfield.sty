@@ -271,6 +271,7 @@
 \sfnewsymbol{boundary}{\partial \Omega}
 \sfnewsymbol{volume}{V}
 \sfnewsymbol{area}{A}
+\sfnewsymbol{line}{l}
 
 %%% Special Functions %%%
 
@@ -505,7 +506,7 @@
 
 %%% Differential Operators %%%
 \sfextendsymbol[prefix=differential]{x, y, z, cylr, cylphi, sphr, t, volume, 
-area, kx, ky, kz}{diff}
+area, line, kx, ky, kz}{diff}
 \sfextendsymbol[prefix=pdiff]{x, y, z, cylr, cylphi, sphr, sphphi, sphtheta}%
 {pdiff}
 \sfextendsymbol[prefix=pdifftwo]{x, y, z, cylr, cylphi, sphr, sphphi, sphtheta}%
@@ -540,9 +541,9 @@ area, kx, ky, kz}{diff}
 \sfextendsymbol[subscript=threeD]{greens, driving}{threeD}
 %% Domains %%
 \sfextendsymbol[subscript=sec]{pos, normal, greens, select, 
-  driving, set, boundary, area, volume, areadiff, volumediff, laplace, 
-  xdiff,ydiff,zdiff,x,y,z, cylrdiff, cylphidiff, cylr, cylphi, sphr, sphphi 
-  sphrdiff}{sec}
+  driving, set, boundary, area, volume, line, areadiff, volumediff, linediff, 
+  laplace, xdiff,ydiff,zdiff,x,y,z, cylrdiff, cylphidiff, cylr, cylphi, sphr, 
+  sphphi, sphrdiff}{sec}
 \sfextendsymbol[subscript=local]{pos, normal, driving, select, set, boundary, 
   area, volume, areadiff, volumediff, cylr, cylphi, sphr, sphphi, sphtheta, 
   sphrdiff, N}{local}
