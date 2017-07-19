@@ -299,7 +299,7 @@
 \sfnewsymbol[subscript={cylm,cylmu}]{cylrs}{(R|S)}
 \sfnewsymbol[subscript={cylm,cylmu}]{cylsr}{(S|R)}
 %% differential Operators
-\sfnewsymbol{laplace}{\Delta} % scalar Laplace operator
+\sfnewsymbol{laplace}{\nabla^2} % scalar Laplace operator
 \sfnewsymbol{grad}{\mathbf{grad}} % gradient of a scalar field
 \sfnewprefix{differential}{\,\mathrm d}
 \sfnewprefix{partial}{\partial}
@@ -327,7 +327,7 @@
 \sfnewsymbol{select}{a}  % selection function
 \sfnewsymbol{window}{w}  % windows function
 \sfnewsymbol[subscript=twohalfD]{correct}{c}  % correction factor
-
+\sfnewsymbol{dist}{\Delta}  % selection function
 %%% Transforms %%%
 
 \sfnewprefix{transform}{\mathcal}
@@ -360,7 +360,7 @@
 %%% Transforms %%%
 %% Temporal %%
 \sfnewprefix{time}{\MakeLowercase}
-\sfnewprefix{ft}{\hat}
+\sfnewprefix{ft}{\tilde}
 %% Cartesian Coordinates %%
 \sfnewprefix{pwd}{\tilde}  % general plane wave decompostion 
 \sfnewprefix{ppwd}{\bar}  % signature function
@@ -527,9 +527,9 @@ area, line, kx, ky, kz}{diff}
 \sfextendsymbol[subscript=s]%
   {pos, normal, driving, areadiff, set, x, y, z, N}{s}
 \sfextendsymbol[subscript=pw]%
-  {pos, normal, driving, cylphi, sphtheta, sphphi, pressure, kvec, N}{pw}
+  {pos, normal, driving, cylphi, sphtheta, sphphi, pressure, kvec, N, dist}{pw}
 \sfextendsymbol[subscript=ps]
-  {pos, normal, driving, pressure, sphr, sphtheta, sphphi, N}{ps}
+  {pos, normal, driving, pressure, sphr, sphtheta, sphphi, N, dist}{ps}
 \sfextendsymbol[subscript=dps]
   {pos, normal, driving, pressure, sphr, sphtheta, sphphi, N}{dps}
 \sfextendsymbol[subscript=ls]{pos, normal, driving, pressure,cylr, cylphi}{ls}
