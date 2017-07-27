@@ -308,9 +308,14 @@
 %% other %%
 \sfnewsymbol{dirac}{\delta}
 \sfnewsymbol{legendre}{L}
-% \sfnewsymbol{comb}{\Sha}
 \sfnewsymbol{heaviside}{\Theta}
 \sfnewsymbol{signum}{\mathrm{sgn}}
+% Sha Symbol
+\DeclareFontFamily{U}{wncy}{}
+\DeclareFontShape{U}{wncy}{m}{n}{<->wncyr10}{}
+\DeclareSymbolFont{mcy}{U}{wncy}{m}{n}
+\DeclareMathSymbol{\Sha}{\mathord}{mcy}{"58}
+\sfnewsymbol{comb}{\Sha}
 
 %%% Sound Field Synthesis %%%
 %% time-frequency dependent %%
