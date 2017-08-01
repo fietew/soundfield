@@ -340,6 +340,7 @@
 \sfnewsymbol[prefix=transform]{inh}{I}  % inhomogeneous part of a sound field
 \sfnewsymbol[prefix=transform]{hom}{H}  % homogeneous part of a sound field
 \sfnewsymbol[prefix=transform]{sht}{S}  % spherical harmonics transform
+\sfnewsymbol[prefix=transform]{cht}{C}  % circular harmonics transform
 
 %%% Utilities %%%
 
@@ -506,7 +507,7 @@
 % x,y,z
 \sfextendsymbol[subscript=t]{fourier}{t}  % fourier transform w.r.t. t
 %% SHT %%
-\sfextendsymbol[superscript=inverse]{sht}{inv}
+\sfextendsymbol[superscript=inverse]{sht, cht, fourier}{inv}
 
 %% Spatial Transforms
 \sfextendsymbol[prefix=pwd]{normal, greens, driving, hrtf, virtualsource}{pwd}
