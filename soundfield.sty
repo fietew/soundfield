@@ -272,6 +272,8 @@
 \sfnewsymbol{boundary}{\partial \Omega}
 \sfnewsymbol{volume}{V}
 \sfnewsymbol{area}{A}
+\sfnewsymbol{circle}{\mathcal{C}}  % circular area
+\sfnewsymbol{R}{R}  % radius of circular area
 \sfnewsymbol{line}{l}
 
 %%% Special Functions %%%
@@ -325,6 +327,7 @@
 \sfnewsymbol{driving}{D}  % driving function
 \sfnewsymbol{greens}{G}  % Green's function
 \sfnewsymbol{hrtf}{H}  % head-related transfer function
+\sfnewsymbol{brtf}{B}  % binaural room transfer function
 \sfnewsymbol{filter}{H}  % head-related transfer function
 \sfnewsymbol{density}{Q}  % density function
 \sfnewsymbol{function}{F}  % function
@@ -411,6 +414,7 @@
 \sfnewkeychoice{subscript}{wc}{\{\mathrm{0},l\}}  % wildcard for both
 \sfnewkeychoice{subscript}{interior}{\mathrm i}  % interior domain
 \sfnewkeychoice{subscript}{exterior}{\mathrm e}  % exterior domain
+\sfnewkeychoice{subscript}{h}{\mathrm{h}}  % head domain
 %% Coordinates Subscript
 \sfnewkeychoice{subscript}{pos}{{\mathbf{x}}}
 \sfnewkeychoice{subscript}{possec}{{\mathbf{x}_0}}
@@ -418,6 +422,7 @@
 %% HRTF %%
 \sfnewkeychoice{subscript}{left}{\mathrm{L}}
 \sfnewkeychoice{subscript}{right}{\mathrm{R}}
+\sfnewkeychoice{subscript}{leftright}{{\{\mathrm{L},\mathrm{R}\}}}
 %% others %%
 \sfnewkeychoice{subscript}{c}{\mathrm{c}}  % "center"
 \sfnewkeychoice{subscript}{ref}{\mathrm{ref}}  % reference
@@ -469,8 +474,11 @@
 
 %%% Sound Field Synthesis %%%
 %% Techniques
+\sfnewkeychoice{superscript}{SFS}{\mathrm{SFS}}
 \sfnewkeychoice{superscript}{WFS}{\mathrm{WFS}}
 \sfnewkeychoice{superscript}{LWFS}{\mathrm{LWFS}}
+\sfnewkeychoice{superscript}{LWFS-SBL}{\mathrm{LWFS-SBL}}
+\sfnewkeychoice{superscript}{LWFS-VSS}{\mathrm{LWFS-VSS}}
 \sfnewkeychoice{superscript}{HOA}{\mathrm{HOA}}
 \sfnewkeychoice{superscript}{NFCHOA}{\mathrm{NFCHOA}}
 
@@ -558,7 +566,12 @@
   sphrdiff, sphphi, sphphidiff, sphtheta, sphthetadiff}{sec}
 \sfextendsymbol[subscript=local]{pos, normal, driving, select, set, boundary, 
   area, volume, areadiff, volumediff, cylr, cylphi, sphr, sphphi, sphtheta, 
-  sphrdiff, N}{local}
+  sphrdiff, N, circle, R}{local}
+\sfextendsymbol[subscript=h]{pos, cylphi}{h}
+%% HRTFs and BRTFs %%
+\sfextendsymbol[subscript=left]{hrtf, brtf}{left}
+\sfextendsymbol[subscript=right]{hrtf, brtf}{right}
+\sfextendsymbol[subscript=leftright]{hrtf, brtf}{leftright}
 %% Sound Field Representations
 % spherical coordinates
 \sfextendsymbol[prefix=rcb, subscript=cylm]{pressure}{rcb}
@@ -570,7 +583,7 @@
 \sfextendsymbol[subscript=neumann]{greens, pressure}{N}
 \sfextendsymbol[subscript=dirichlet]{greens, pressure}{D}
 %%% Others %%%
-\sfextendsymbol[subscript=c]{pos, normal, driving}{c}
+\sfextendsymbol[subscript=c]{pos, normal, driving, circle, set, R}{c}
 \sfextendsymbol[subscript=ref]{pos, sphr}{ref}
 \sfextendsymbol[subscript=scatter]{pressure}{sc}
 \sfextendsymbol[subscript=incoming]{pressure}{in}
