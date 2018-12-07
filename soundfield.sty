@@ -336,6 +336,8 @@
 \sfnewsymbol{density}{Q}  % density function
 \sfnewsymbol{function}{F}  % function
 \sfnewsymbol{kernel}{K}  % kernel
+\sfnewsymbol{phase}{\Phi}  % kernel
+\sfnewsymbol{amp}{A}  % kernel
 %% time-frequency independent %%
 \sfnewsymbol{select}{a}  % selection function
 \sfnewsymbol{window}{w}  % windows function
@@ -462,6 +464,8 @@
 %%% Sound Field Synthesis %%%
 \sflinkkeychoice{subscript}{pressure}{pressure}
 \sflinkkeychoice{subscript}{greens}{greens}
+\sflinkkeychoice{subscript}{driving}{driving}
+\sflinkkeychoice{subscript}{virtualsource}{virtualsource}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% List of Elementary Superscript %%%%
@@ -545,9 +549,10 @@
 %%% Sound Field Synthesis %%%
 
 %% Sound Fields %%
-\sfextendsymbol[subscript=pressure]{inh, hom, density}{P}
-\sfextendsymbol[subscript=greens]{inh, hom, density}{G}
-
+\sfextendsymbol[subscript=pressure]{inh, hom, density, phase, amp}{P}
+\sfextendsymbol[subscript=greens]{inh, hom, density, phase, amp}{G}
+\sfextendsymbol[subscript=virtualsource]{inh, hom, density, phase, amp}{S}
+\sfextendsymbol[subscript=driving]{phase, amp}{D}
 %% Source Types %%%
 \sfextendsymbol[subscript=s]%
   {pos, normal, driving, areadiff, set, x, y, z, N}{s}
