@@ -480,7 +480,7 @@
 
 \sfnewkeychoice{superscript}{inverse}{-1}
 \sfnewkeychoice{superscript}{prime}{\prime}
-
+\sfnewkeychoice{superscript}{dprime}{\prime\prime}
 %%% Sound Field Synthesis %%%
 %% Techniques
 \sfnewkeychoice{superscript}{SFS}{\mathrm{SFS}}
@@ -548,11 +548,15 @@
 
 %%% Sound Field Synthesis %%%
 
-%% Sound Fields %%
+%% Sound Fields (inhom., hom., Density, Phase, Amplitude) %%
 \sfextendsymbol[subscript=pressure]{inh, hom, density, phase, amp}{P}
 \sfextendsymbol[subscript=greens]{inh, hom, density, phase, amp}{G}
 \sfextendsymbol[subscript=virtualsource]{inh, hom, density, phase, amp}{S}
 \sfextendsymbol[subscript=driving]{phase, amp}{D}
+\sfextendsymbol[superscript=prime]
+  {phase, phaseP, phaseG, phaseS}{p}
+\sfextendsymbol[superscript=dprime]
+  {phase, phaseP, phaseG, phaseS}{pp}
 %% Source Types %%%
 \sfextendsymbol[subscript=s]%
   {pos, normal, driving, areadiff, set, x, y, z, N}{s}
