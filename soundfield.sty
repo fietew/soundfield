@@ -370,6 +370,8 @@
 \sfnewsymbol{err}{\epsilon}  % general error of something
 \sfnewsymbol{delta}{\Delta}  % sampling distance
 \sfnewsymbol{cost}{c}  % cost functions
+\sfnewsymbol{eta}{\eta}
+\sfnewsymbol{zeta}{\zeta}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% List of elementary Prefixes %%%%
@@ -461,6 +463,9 @@
 \sflinkkeychoice{subscript}{t}{t}
 %% Error
 \sflinkkeychoice{subscript}{err}{err}  % error
+%% Misc. %%
+\sflinkkeychoice{subscript}{eta}{eta} 
+\sflinkkeychoice{subscript}{zeta}{zeta}
 
 %%% Sound Field Synthesis %%%
 \sflinkkeychoice{subscript}{pressure}{pressure}
@@ -550,9 +555,12 @@
 %%% Sound Field Synthesis %%%
 
 %% Sound Fields (inhom., hom., Density, Phase, Amplitude) %%
-\sfextendsymbol[subscript=pressure]{inh, hom, density, phase, amp}{P}
-\sfextendsymbol[subscript=greens]{inh, hom, density, phase, amp}{G}
-\sfextendsymbol[subscript=virtualsource]{inh, hom, density, phase, amp}{S}
+\sfextendsymbol[subscript=pressure]{inh, hom, density, phase, amp,  kvec, 
+  kvecnorm}{P}
+\sfextendsymbol[subscript=greens]{inh, hom, density, phase, amp, kvec, 
+  kvecnorm}{G}
+\sfextendsymbol[subscript=virtualsource]{inh, hom, density, phase, amp, kvec, 
+  kvecnorm}{S}
 \sfextendsymbol[subscript=driving]{phase, amp}{D}
 \sfextendsymbol[superscript=prime]
   {phase, phaseP, phaseG, phaseS}{p}
