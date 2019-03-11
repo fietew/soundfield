@@ -478,15 +478,21 @@
 
 \sfnewkeychoice{superscript}{sampled}{\mathrm{S}} % sampled
 \sfnewkeychoice{superscript}{truncated}{\mathrm{tr}}  % truncated
+\sfnewkeychoice{superscript}{sbl}{\mathrm{B}}  % spatial bandwidth limited
+
+%%% Operations %%%
 \sfnewkeychoice{superscript}{timereverse}{*} % time reversal/phase conjugation
 \sfnewkeychoice{superscript}{transpose}{T} % transpose
+\sfnewkeychoice{superscript}{inverse}{-1} 
+\sfnewkeychoice{superscript}{prime}{\prime}
+\sfnewkeychoice{superscript}{dprime}{\prime\prime}
+\sfnewkeychoice{superscript}{shift}{\dagger}  % shifted coordinate frame
+\sfnewkeychoice{superscript}{spp}{\ddagger}  % stationary phase point
 
+%% Hankel Functions
 \sfnewkeychoice{superscript}{firstkind}{(1)}
 \sfnewkeychoice{superscript}{secondkind}{(2)}
 
-\sfnewkeychoice{superscript}{inverse}{-1}
-\sfnewkeychoice{superscript}{prime}{\prime}
-\sfnewkeychoice{superscript}{dprime}{\prime\prime}
 %%% Sound Field Synthesis %%%
 %% Techniques
 \sfnewkeychoice{superscript}{SFS}{\mathrm{SFS}}
@@ -615,3 +621,6 @@
 \sfextendsymbol[prefix=norm]{f, k}{norm}
 \sfextendsymbol[superscript=sampled]{driving, f, fnorm}{S}
 \sfextendsymbol[superscript=truncated]{driving, f, fnorm}{tr}
+\sfextendsymbol[superscript=sbl]{virtualsource, driving}{B}
+\sfextendsymbol[superscript=shift]{pos, possec}{shift}
+\sfextendsymbol[superscript=spp]{pos, x}{spp}
