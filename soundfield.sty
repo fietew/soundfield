@@ -269,6 +269,7 @@
 \sfnewsymbol{wc}{k}  % wavenumber
 \sfnewsymbol{wl}{\lambda}  % wavelength
 \sfnewsymbol{t}{t}  % time
+\sfnewsymbol{n}{n}  % discrete time
 \sfnewsymbol{T}{T}  % constant time
 
 %%% Set Theory, Areas and Boundaries %%%
@@ -297,24 +298,22 @@
 \sfnewsymbol[subscript=sphn]{sphbessel}{j}
 \sfnewsymbol[subscript=sphn]{sphneumann}{y}
 \sfnewsymbol[subscript=sphn,superscript=secondkind]{sphhankel}{h}
-\sfnewsymbol[superscript=sphm,subscript=sphn]{sphreg}{R}  % regular spherical 
-%basis function
-\sfnewsymbol[superscript=sphm,subscript=sphn]{sphsin}{S}  % singular spherical 
-%basis function
-\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphrr}{(R|R)}
-\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphss}{(S|S)}
-\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphrs}{(R|S)}
-\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphsr}{(S|R)}
+\sfnewsymbol[superscript=sphm,subscript=sphn]{sphreg}{I}% int. sph. basis func.
+\sfnewsymbol[superscript=sphm,subscript=sphn]{sphsin}{E}% ext. sph. basis func. 
+\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphrr}{(I|I)}
+\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphss}{(E|E)}
+\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphrs}{(I|E)}
+\sfnewsymbol[superscript={sphm,sphmu},subscript={sphn,sphnu}]{sphsr}{(E|I)}
 %% cylindrical Basis function
 \sfnewsymbol[subscript=cylm]{cylbessel}{J}
 \sfnewsymbol[subscript=cylm]{cylneumann}{Y}
 \sfnewsymbol[subscript=cylm,superscript=secondkind]{cylhankel}{H}
-\sfnewsymbol[subscript=cylm]{cylreg}{R}  % regular circular basis function
-\sfnewsymbol[subscript=cylm]{cylsin}{S}  % singular circular basis function
-\sfnewsymbol[subscript={cylm,cylmu}]{cylrr}{(R|R)}
-\sfnewsymbol[subscript={cylm,cylmu}]{cylss}{(S|S)}
-\sfnewsymbol[subscript={cylm,cylmu}]{cylrs}{(R|S)}
-\sfnewsymbol[subscript={cylm,cylmu}]{cylsr}{(S|R)}
+\sfnewsymbol[subscript=cylm]{cylreg}{I}% int. cyl. basis func.
+\sfnewsymbol[subscript=cylm]{cylsin}{E}% ext. cyl. basis func.
+\sfnewsymbol[subscript={cylm,cylmu}]{cylrr}{(I|I)}
+\sfnewsymbol[subscript={cylm,cylmu}]{cylss}{(E|E)}
+\sfnewsymbol[subscript={cylm,cylmu}]{cylrs}{(I|E)}
+\sfnewsymbol[subscript={cylm,cylmu}]{cylsr}{(E|I)}
 %% differential Operators
 \sfnewsymbol{laplace}{\nabla^2} % scalar Laplace operator
 \sfnewsymbol{grad}{\mathbf{grad}} % gradient of a scalar field
@@ -602,8 +601,8 @@
 %% Domains %%
 \sfextendsymbol[subscript=sec]{pos, normal, tangent, greens, select, 
   driving, set, boundary, area, volume, line, areadiff, volumediff, linediff, 
-  laplace, xdiff,ydiff,zdiff,x,y,z, cylrdiff, cylphidiff, cylr, cylphi, sphr, 
-  sphrdiff, sphphi, sphphidiff, sphtheta, sphthetadiff, N}{sec}
+  laplace, xdiff, ydiff, zdiff, x, y, z, cylrdiff, cylphidiff, cylr, cylphi, 
+  sphr, sphrdiff, sphphi, sphphidiff, sphtheta, sphthetadiff, N, R}{sec}
 \sfextendsymbol[subscript=local]{pos, normal, driving, select, set, boundary, 
   area, volume, areadiff, volumediff, cylr, cylphi, sphr, sphphi, sphtheta, 
   sphrdiff, N, circle, R, region, contour}{local}
